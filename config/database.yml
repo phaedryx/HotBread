@@ -1,0 +1,14 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: hotbread_dev
+  pool: 5
+  username: development
+  password: development
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: hotbread_test
+  pool: 5
+  username: development
+  password: development
