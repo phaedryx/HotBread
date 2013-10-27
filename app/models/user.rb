@@ -24,6 +24,12 @@ class User < ActiveRecord::Base
     has_position?("President") || has_position?("Webmaster")
   end
 
+  # don't delete users unless you absolutely must
+  alias_method :forced_destroy, :destroy
+  def destroy
+    update_attribute(:deleted_at, Time.zone.now)
+  end
+
   def positions=(positions)
     invalid_positions = positions - POSITIONS
     raise PositionError.new("can't assign invalid positions: #{invalid_positions.join(', ')}") unless invalid_positions.empty?

@@ -29,9 +29,9 @@
       </ul>
       <section class="top-bar-section">
         <ul class="right">
-          <li><a href="#">Edit account settings</a></li>
+          <li><%= link_to raw("<i class='fi-torso'></i> Edit account settings"), edit_user_path(current_user) %>
           <li class="divider"></li>
-          <li><%= link_to "Sign out #{current_user.name}", sign_out_path %></li>
+          <li><%= link_to raw("Sign out <i class='fi-arrow-right'></i>"), sign_out_path %></li>
         </ul>
       </section>
     </nav>
