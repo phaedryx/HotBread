@@ -6,15 +6,27 @@ gem 'rails', '4.0.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'minitest-rails'
+gem 'minitest-rails-capybara'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'zurb-foundation'
+gem 'foundation-icons-sass-rails'
+
+#auth
+gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-gplus'
+gem 'omniauth-identity'
+
+group :development, :test do
+  gem 'dotenv-rails'
+end
 
 group :production do
   gem 'rails_12factor'
   gem 'thin'
-  # gem 'unicorn'
 end
 
 group :doc do
