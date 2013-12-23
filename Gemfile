@@ -10,8 +10,7 @@ gem 'minitest-rails-capybara'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'zurb-foundation'
-gem 'foundation-icons-sass-rails'
+gem 'foundation-rails'
 
 #auth
 gem 'bcrypt-ruby', '~> 3.0.0'

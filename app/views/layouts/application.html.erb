@@ -16,6 +16,7 @@
   	<title><%= content_for?(:title) ? yield(:title) : "HotBread" %></title>
 
   	<%= stylesheet_link_tag    "application" %>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
   </head>
@@ -30,9 +31,9 @@
       <section class="top-bar-section">
         <ul class="right">
           <li class="divider"></li>
-          <li><%= link_to raw("<i class='fi-torso'></i> Edit account settings"), edit_user_path(current_user) %>
+          <li><%= link_to raw("<i class='fa fa-user'></i> Edit account settings"), edit_user_path(current_user) %>
           <li class="divider"></li>
-          <li><%= link_to raw("Sign out <i class='fi-arrow-right'></i>"), sign_out_path %></li>
+          <li><%= link_to raw("Sign out <i class='fa fa-sign-out'></i>"), sign_out_path %></li>
         </ul>
       </section>
     </nav>

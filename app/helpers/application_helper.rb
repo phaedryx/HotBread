@@ -12,12 +12,12 @@ module ApplicationHelper
 
   def flash_icon(level)
     case level
-      when :warning then "fi-alert"
-      when :notice  then "fi-check"
-      when :success then "fi-check"
-      when :error   then "fi-alert"
-      when :alert   then "fi-alert"
-      else "fi-check"
+      when :warning then "fa fa-exclamation-circle"
+      when :notice  then "fa fa-exclamation"
+      when :success then "fa fa-check"
+      when :error   then "fa fa-exclamation-triangle"
+      when :alert   then "fa fa-exclamation-triangle"
+      else "fa fa-times-circle"
     end
   end
 end
