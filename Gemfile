@@ -19,6 +19,9 @@ gem 'omniauth-facebook'
 gem 'omniauth-gplus'
 gem 'omniauth-identity'
 
+#mail
+gem 'mailchimp-api'
+
 group :development, :test do
   gem 'dotenv-rails'
 end
