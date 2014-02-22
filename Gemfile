@@ -1,4 +1,4 @@
-ruby '2.0.0'
+ruby '2.1.0'
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
@@ -21,6 +21,13 @@ gem 'omniauth-identity'
 
 #mail
 gem 'mailchimp-api'
+
+group :development do
+  gem 'pry-rails'
+  gem 'awesome_print'
+  gem 'binding_of_caller'
+  gem 'better_errors'
+end
 
 group :development, :test do
   gem 'dotenv-rails'
